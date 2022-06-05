@@ -1,0 +1,10 @@
+services:
+  db:
+    image: mysql
+    container_name: db
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: blog
+      MYSQL_ROOT_PASSWORD: root
